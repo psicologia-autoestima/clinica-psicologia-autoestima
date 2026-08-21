@@ -1,0 +1,264 @@
+:root {
+    --brand-purple: #6C2E8D;
+    --brand-wine: #8A1E36;
+    --brand-light: #F9F5FA;
+    --brand-gray: #E5E7EB;
+    --text-dark: #374151;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-dark);
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+}
+
+.text-purple {
+    color: var(--brand-purple) !important;
+}
+
+.text-wine {
+    color: var(--brand-wine) !important;
+}
+
+.bg-purple {
+    background-color: var(--brand-purple) !important;
+}
+
+.bg-wine {
+    background-color: var(--brand-wine) !important;
+}
+
+.bg-light-purple {
+    background-color: var(--brand-light) !important;
+}
+
+.btn-purple {
+    background-color: var(--brand-purple);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: var(--brand-wine);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-outline-white {
+    border: 2px solid white !important;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+    border-radius: 50px !important;
+    padding: 10px 25px !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-outline-white:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-link {
+    color: #555;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--brand-purple);
+}
+
+#inicio {
+    position: relative;
+    background: url('../assets/img/sala-clinica.webp') no-repeat center center/cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;    
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(108, 46, 141, 0.541), rgba(138, 30, 53, 0.507));
+    mix-blend-mode: multiply;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.feature-card {
+    border-top: 4px solid var(--brand-purple);
+    border-radius: 15px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: var(--brand-light);
+    color: var(--brand-purple);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem auto;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #eee;
+    transition: all 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    border-color: transparent;
+}
+
+.team-img-wrapper {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem auto;
+    border: 4px solid var(--brand-light);
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.team-member:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #111827;
+    color: #9CA3AF;
+}
+
+footer h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+}
+
+footer a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--brand-purple);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #20BA5C;
+    color: white;
+}
+
+.dev {
+    font-size: 12px;
+}
+
+.dev a {
+    color: var(--brand-purple);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.dev a:hover {
+    color: var(--brand-wine);
+    text-decoration: underline;
+}
+
+.img-destaque-ajustada {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+    .img-destaque-ajustada {
+        max-height: 600px;
+    }
+}
